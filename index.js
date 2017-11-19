@@ -22,7 +22,7 @@ function attributesToPhrase(collection)
   const newCollection = collection.map(
       function (item)
       {
-        //var newItem = item.split(" ");
+        var newItem = item.split(" ");
         return Object.assign({}, '${item} is from ${item}');
       }
     );
