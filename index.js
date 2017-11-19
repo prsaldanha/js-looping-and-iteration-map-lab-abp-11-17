@@ -1,5 +1,5 @@
 function lowerCaseDrivers(collection)
 {
-  var newcollection = collection.map(function(x) { x.toLowerCase();});
-  return newcollection;
+  var lowers = collection.map(function(x) { return x.toLowerCase(); });
+  return lowers;
 }
