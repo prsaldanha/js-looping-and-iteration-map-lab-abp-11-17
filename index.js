@@ -6,5 +6,13 @@ function lowerCaseDrivers(collection)
 
 function nameToAttributes(collection)
 {
-
+  const newCollection = collection.map(
+      function (item) 
+      {
+        var newItem = item.split(" ");
+        return Object.assign({}, item, { firstName: newItem[0], lastName: newItem[1] });
+      }
+    );
+    
+  return newCollection;
 }
