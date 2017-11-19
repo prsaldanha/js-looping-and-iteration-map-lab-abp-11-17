@@ -22,7 +22,7 @@ function attributesToPhrase(collection)
   const newCollection = collection.map(
       function (item)
       {
-        return `${item.name} is from ${item.hometown}`);
+        return `${item.name} is from ${item.hometown}`;
       }
     );
 
