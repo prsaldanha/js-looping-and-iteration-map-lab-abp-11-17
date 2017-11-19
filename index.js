@@ -16,3 +16,16 @@ function nameToAttributes(collection)
 
   return newCollection;
 }
+
+function attributesToPhrase(collection)
+{
+  const newCollection = collection.map(
+      function (item)
+      {
+        var newItem = item.split(" ");
+        return Object.assign({}, { name: newItem[0], hometown: newItem[3] });
+      }
+    );
+
+  return newCollection;
+}
