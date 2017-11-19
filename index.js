@@ -23,7 +23,7 @@ function attributesToPhrase(collection)
       function (item)
       {
         //var newItem = item.split(" ");
-        return Object.assign({}, "${item} is from ${item}");
+        return Object.assign({}, '${item} is from ${item}');
       }
     );
 
