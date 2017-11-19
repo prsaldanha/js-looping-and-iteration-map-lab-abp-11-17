@@ -22,8 +22,8 @@ function attributesToPhrase(collection)
   const newCollection = collection.map(
       function (item)
       {
-        var newItem = item.split(" ");
-        return Object.assign({}, "${newItem[0]} is from ${newItem[1]}");
+        //var newItem = item.split(" ");
+        return Object.assign({}, "${item} is from ${item}");
       }
     );
 
